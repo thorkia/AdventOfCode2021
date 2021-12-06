@@ -1,5 +1,3 @@
-import time
-
 filename = '.\\Day06\\input.txt'
 #filename = '.\\Day06\\testinput.txt'
 
@@ -14,8 +12,6 @@ for item in items:
 
 print(dayDict)
 
-startns = time.time_ns()
-
 #Part 1 -> count 80 days
 for day in range(1,81):
     day0 = dayDict[0]
@@ -29,7 +25,7 @@ for day in range(1,81):
 
 print(str(sum(dayDict.values())))
 
-#part 2 -> 256 day
+#part 2 -> 256 days
 for day in range(81,257):
     day0 = dayDict[0]
     for i in range(1,9):
@@ -41,8 +37,3 @@ for day in range(81,257):
     #print(dayDict)
 
 print(str(sum(dayDict.values())))
-
-endns = time.time_ns()
-
-elapsedTime = (endns - startns) / 1000000
-print(elapsedTime)

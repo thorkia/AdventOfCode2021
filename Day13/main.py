@@ -1,5 +1,5 @@
-filename = '.\\Day12\\input.txt'
-#filename = '.\\Day12\\testinput.txt'
+filename = '.\\Day13\\input.txt'
+#filename = '.\\Day13\\testinput.txt'
 
 with open(filename) as f:
     items = [item.strip() for item in f.readlines()]
@@ -52,8 +52,8 @@ for y in range(maxY+1):
     display = ""
     for x in range(maxX+1):
         if (x,y) in setGrid:
-            display+="*"
+            display+="#"
         else:
-            display+="."
+            display+=" "
     print(display)
 
